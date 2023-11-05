@@ -747,7 +747,18 @@ Zadanie 9. Skonstruuj listę o nazwie moja_lista, której pierwszym elementem b�
           Na zakończenie, wyznacz listę zawierającą wartości funkcji gamma Eulera dla elementów listy moja_lista.                 
                        
                  
-                                  
+               pi # wartość pi
+         gamma # funkcja gamma Eulera 
+         sqrt # funkcja oblicznia pierwiastka kwadratowego                 
+ 
+				 MyList <- list(c("Mój Mały", "Wektor"), pi, sqrt, seq(0.02, 1, 0.02))
+                 
+         	# usuń elementy numer jeden i trzy z tej listy.
+					MyList[c(1,3)] <- NULL        
+                           
+          # wyznacz listę zawierającą wartości funkcji gamma Eulera 
+          lapply(MyList, gamma)
+                                         
                  
                  
                  
